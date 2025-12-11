@@ -15,7 +15,7 @@ description_txt = "あなたは優秀なアシスタントです。ユーザー�
 messages = [
     {"role": "system", "content": description_txt}
 ]
-"""
+
 def question_text(request: str):
     
     # ユーザーからの質問をメッセージリストに追加
@@ -38,7 +38,10 @@ def question_text(request: str):
     
     # 応答テキストを返す
     return response.output_text
+
 """
+
+comlentions版コード
 
 def question_text(request: str):
     
@@ -64,7 +67,7 @@ def question_text(request: str):
     
     # 応答テキストを返す
     return response.choices[0].message.content
-
+"""
 
 while True:
     request = input("質問をどうぞ: ")
