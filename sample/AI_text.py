@@ -67,6 +67,7 @@ def question_text(request: str):
     
     # 応答テキストを返す
     return response.choices[0].message.content
+    
 """
 
 while True:
