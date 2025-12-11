@@ -7,7 +7,6 @@ load_dotenv()
 
 client = OpenAI()
 
-#image_path = "C:\Users\fuga1\OneDrive\画像\meter2.jpg"
 
 # 投げられた画像を扱えるようにBase64にエンコードする関数
 def encode_image(image_path):
